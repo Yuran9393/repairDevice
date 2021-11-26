@@ -1,0 +1,134 @@
+@import _normalize.sass
+@import bootstrap-grid.min.scss
+@font-face 
+  font-family: 'Gilroy-Semibold'
+  src: url('Gilroy-Semibold.eot')
+  src: url('../fonts/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/Gilroy-Semibold.svg#Gilroy-Semibold') format('svg'), url('../fonts/Gilroy-Semibold.ttf') format('truetype'), url('../fonts/Gilroy-Semibold.woff') format('woff'), url('../fonts/Gilroy-Semibold.woff2') format('woff2')
+  font-weight: normal
+  font-style: normal
+@mixin montserrat
+    font-family: 'Montserrat', sans-serif
+@mixin flex
+    display: flex
+    align-items: center
+    justify-content: space-between
+body
+    font-family: Gilroy-Semibold
+    padding: 30px
+    background: #F4F9FC
+li
+  list-style: none
+a
+  text-decoration: none
+.container
+  max-width: 1297px
+.logo
+  width: 202px
+  height: 70px
+.header
+  &_body
+    @include flex
+  &_menu
+    margin-right: 260px
+    &_item
+      margin-right: 24px  
+      display: inline-block
+      &:last-child
+        margin-right: 0
+    &_link
+      font-weight: 600
+      font-size: 16px
+      line-height: 19px
+      letter-spacing: -0.01em
+      color: #13171D
+  &_adress
+    position: relative
+    font-size: 14px
+    color: #13171D
+    &::before
+      content: url("../img/map.png")
+      width: 32px
+      height: 32px
+      position: absolute
+      top: 0
+      left: -50px
+  &_map
+    font-size: 12px
+    text-decoration-line: underline
+    color: #015AA9
+  &_btn
+    padding: 16px
+    border: none
+    background: rgba(226, 0, 26, 0.1)
+    border-radius: 15px
+    cursor: pointer
+  &_number
+    font-weight: 600
+    font-size: 20px
+    letter-spacing: -0.01em
+    color: #13171D
+    display: inline-block
+
+.home
+  margin-top: 139px
+  &_body 
+    @include flex
+    align-items: normal
+  &_title
+    font-weight: bold
+    font-size: 90px
+    line-height: 100px
+    letter-spacing: -0.01em
+    color: #13171D
+  &_subtitle
+    font-size: 24px
+    line-height: 34px
+    letter-spacing: -0.01em
+    color: #444444
+  &_btn
+    background: #E2001A
+    border-radius: 15px
+    display: inline-block
+    padding: 18px 30px
+    margin-top: 40px
+    &_link
+      font-weight: 600
+      font-size: 16px
+      line-height: 26px
+      letter-spacing: -0.01em
+      color: #FFFFFF
+  &_img
+    position: relative
+    &_master
+      border: 1px dashed rgba(0,0 ,0 ,0.2 )
+      border-radius: 100%
+      padding: 0 30px 146px 125px
+      width: 609px
+      height: 651px
+  &_detail
+    position: absolute
+    top: 36px
+    left: 100px
+    background-color: #fff
+    border-radius: 100%
+    padding: 10px
+    width: 56px
+    height: 56px
+  &_phone
+    position: absolute
+    bottom: 240px
+    left: 40px
+    background-color: #fff
+    border-radius: 100%
+    padding: 10px
+    width: 50px
+    height: 50px
+  &_laptop
+    position: absolute
+    top: 45px
+    right: 105px
+    background-color: #fff
+    border-radius: 100%
+    padding: 10px
+    width: 36px
+    height: 36px
